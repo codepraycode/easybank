@@ -27,6 +27,8 @@
 
     --padding-sm-x: 1rem;
     --padding-sm-y: 1rem;
+
+    --transition:all 0.5s;
 }
 
 * {
@@ -67,7 +69,7 @@ button {
 
     border-radius: 30px;
 
-    transition: all 0.5s;
+    transition: var(--transition);
     cursor: pointer;
 
 
@@ -104,10 +106,6 @@ nav ul {
     color: var(--grayish-blue);
 }
 
-
-header {
-    padding: 1rem var(--padding-y);
-}
 
 section {
     padding: var(--padding-x) var(--padding-y);
@@ -212,14 +210,20 @@ header {
     justify-content: space-between;
     background-color: var(--white);
 
-    position: absolute;
+    padding: 1rem var(--padding-y);
+
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
 
-    z-index: 2;
+    z-index: 4;
 }
 
+
+.dropdown{
+    display:none;
+}
 
 .hero {
     /* background-color: var(--very-light-gray); */

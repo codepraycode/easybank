@@ -26,32 +26,33 @@
 
     <nav class="nav">
 
-      <span class="menu">
-        <img src="/images/icon-hamburger.svg"/>
-      </span>
+      <span class="menu" data-menu="menu" data-opened="false"></span>
 
-      <ul>
 
-        <li class="nav__item">
-          Home
-        </li>
+      
+        <ul>
 
-        <li class="nav__item">
-          About
-        </li>
+          <li class="nav__item">
+            Home
+          </li>
 
-        <li class="nav__item">
-          Contact
-        </li>
+          <li class="nav__item">
+            About
+          </li>
 
-        <li class="nav__item">
-          Blog
-        </li>
+          <li class="nav__item">
+            Contact
+          </li>
 
-        <li class="nav__item">
-          Careers
-        </li>
-      </ul>
+          <li class="nav__item">
+            Blog
+          </li>
+
+          <li class="nav__item">
+            Careers
+          </li>
+        </ul>
+
       
     </nav>
 
@@ -61,6 +62,33 @@
 
   </header>
 
+  <div class="dropdown" data-dropdown>
+
+    <ul>
+
+      <li class="nav__item">
+        Home
+      </li>
+
+      <li class="nav__item">
+        About
+      </li>
+
+      <li class="nav__item">
+        Contact
+      </li>
+
+      <li class="nav__item">
+        Blog
+      </li>
+
+      <li class="nav__item">
+        Careers
+      </li>
+    </ul>
+
+  </div>
+  
 
   <section class="hero">
 
@@ -339,6 +367,38 @@
 
   </footer>  
 
+
+
+  <script>
+
+    var menu_btn = document.querySelector("[data-menu]")
+    var dropdown_element = document.querySelector("[data-dropdown]")
+
+
+    menu_btn.addEventListener('click', ()=>{
+
+        var isMenuOpened = menu_btn.getAttribute("data-opened") === 'true';
+
+        if (!isMenuOpened){
+          // set the dropdown element to show
+
+          dropdown_element.classList.add('show')
+          menu_btn.setAttribute("data-opened", "true")
+          
+        }
+
+        else {
+          // do exactly the opposite
+          dropdown_element.classList.remove('show')
+          menu_btn.setAttribute("data-opened", "false")
+        }
+
+        console.log(dropdown_element.classList)
+
+    })
+    
+
+  </script>
   
   
   <!-- <div class="attribution">
