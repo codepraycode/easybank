@@ -25,6 +25,9 @@
     --font-w-300: 300;
     --font-w-400: 400;
     --font-w-700: 700;
+
+    --padding-x: 5rem;
+    --padding-y: 10rem;
 }
 
 *{
@@ -47,6 +50,7 @@ body{
 
     overflow-x: hidden;
 
+    background-color: var(--very-light-gray);
 
 }
 
@@ -75,8 +79,12 @@ p{
     color: var(--grayish-blue);
     margin: 2rem 0;
 }
-h2{
+h2, h3{
     margin: 0;
+    
+    color: var(--dark-blue);
+    font-weight: var(--font-w-400);
+    font-family: var(--font-family);
 }
 
 ul{
@@ -93,10 +101,100 @@ nav ul {
     color: var(--grayish-blue);
 }
 
-header,
-section {
-    padding: 1rem 8rem;
+
+header {
+    padding: 1rem var(--padding-y);
 }
+
+section {
+    padding: var(--padding-x) var(--padding-y);
+}
+
+section.drk{
+    background-color: var(--light-grayish-blue);
+}
+
+section .section_header{
+    width: 50%;
+    font-size: 1rem;
+}
+
+section .section_header h3{
+    font-size: 2.5rem;
+}
+section .section_header p{
+    font-weight: var(--font-w-400);
+}
+
+.listings{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin-top: 80px;
+
+    width: 100%;
+
+}
+
+.listings__items{
+    font-size: 1rem;
+    width: 250px;
+    margin: 0 10px;
+}
+
+.listings__items h3{
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+.listings__items p{
+    font-size: 1rem;
+    line-height: 25px;
+    text-align: left;
+}
+
+
+.listings.articles{
+    margin-top: 50px;
+}
+.listings.articles .listings__items {
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+
+.listings.articles .listings__items .featured_image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 6px 6px 0 0;
+}
+
+.listings.articles .listings__items .content {
+    padding: 30px 23px 0 23px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.listings.articles .content h3,
+.listings.articles .content p{
+    margin-top: 0px;
+}
+.listings.articles .content p{
+    font-size: .9rem;
+    line-height: 19px;
+}
+
+.listings.articles .content span{
+    font-size: .7rem;
+    color: var(--grayish-blue);
+    margin-left: 5px;
+}
+.listings.articles .content h3{
+    font-size: 1.2rem;
+}
+
 
 header{
     display: flex;
@@ -114,7 +212,7 @@ header{
 
 
 .hero{
-    background-color: var(--light-grayish-blue);
+    /* background-color: var(--very-light-gray); */
     height: 95vh;
 
     /* position: relative; */
@@ -124,15 +222,12 @@ header{
 
     justify-content: space-between;
 
-    /* overflow: hidden; */
+    /* padding: var(--padding-x) 5rem; */
 }
 
 .hero h2{
     margin-top: 8rem;
-    font-size: 3.5rem;
-    color: var(--dark-blue);
-    font-weight: var(--font-w-400);
-    font-family: var(--font-family);
+    font-size: 3rem;
 }
 .hero div:first-of-type{
     width: 40%;
@@ -140,7 +235,7 @@ header{
 .hero div:last-of-type{
     position: absolute;
     right: -24%;
-    top: -6%;
+    top: -5%;
 
     z-index: 1;
 
