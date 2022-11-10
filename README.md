@@ -25,7 +25,7 @@ A user can:
 
 ## Usage
 
-This project can be accessed on a [live server](https://vercel.com/)
+This project can be accessed on a [live server](easybank-landing-page-codepraycode.vercel.app)
 
 ## Author
 
