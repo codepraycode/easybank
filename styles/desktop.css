@@ -14,6 +14,7 @@
 
     /* Gradient */
     --btn-gradient: linear-gradient(115deg, rgba(49, 211, 92, 1) 48%, rgba(43, 183, 218, 1) 92%);
+    --btn-gradient2: linear-gradient(127deg, rgba(49, 211, 92, 1) 18%, rgba(43, 183, 218, 1) 73%);
 
     /* Typography */
     --font-size: 18px;
@@ -69,11 +70,16 @@ button {
 
     border-radius: 30px;
 
-    transition: var(--transition);
+    transition: var(--transition) !important;
     cursor: pointer;
 
 
     font-weight: var(--font-w-400);
+}
+
+
+button:hover{
+    background: var(--btn-gradient2);
 }
 
 p {
