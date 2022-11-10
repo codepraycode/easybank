@@ -1,0 +1,91 @@
+/* Google fonts >> Public Sans */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+:root{
+    --mobile-breakpoint: 375px;
+    
+    /* Primary colors */
+    --dark-blue: hsl(233, 26%, 24%);
+    --lime-green: hsl(136, 65%, 51%);
+    --bright-cyan: rgb(43, 183, 218);
+
+
+    /* Neutral */
+    --grayish-blue:hsl(233, 8%, 62%);
+    --light-grayish-blue: hsl(220, 16%, 96%);
+    --very-light-gray:hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Gradient */
+    --btn-gradient:linear-gradient(115deg, rgba(49, 211, 92, 1) 48%, rgba(43, 183, 218, 1) 92%);
+
+    /* Typography */
+    --font-size: 18px;
+    --font-family: 'Public Sans', sans-serif;
+    --font-w-300: 300;
+    --font-w-400: 400;
+    --font-w-700: 700;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+
+    /* Fonts */
+    font-family: var(--font-family);
+    font-size:var(--font-size);
+    font-weight: var(--font-w-300);
+
+
+}
+
+
+button{
+    display: block;
+    /* background-color: var(--lime-green); */
+    background: var(--btn-gradient);
+    border-width: 0;
+    text-align: center;
+
+    padding: .85rem 1.9rem;
+
+    color: var(--very-light-gray);
+
+    border-radius: 30px;
+
+    transition: all 0.5s;
+    cursor: pointer;
+
+
+    font-weight: var(--font-w-400);
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding: 1rem 6rem;
+
+    background-color:var(--white);
+}
+
+
+nav ul{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    font-size: 0.9rem;
+    color: var(--grayish-blue)
+
+}
