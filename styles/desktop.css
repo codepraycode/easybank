@@ -381,7 +381,7 @@ footer>div:last-of-type {
     display: none;
 }
 
-footer nav {
+footer .nav {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -393,12 +393,12 @@ footer nav {
 
 }
 
-footer nav span{
+footer .nav span{
 
     cursor: pointer;
 }
 
-footer nav span:hover{
+footer .nav span:hover{
 
     color: var(--lime-green);
     
