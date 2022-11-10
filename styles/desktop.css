@@ -81,6 +81,11 @@ p {
     margin: 2rem 0;
 }
 
+a{
+    text-decoration: none;
+    color: var(--bright-cyan);
+}
+
 h2,
 h3 {
     margin: 0;
@@ -312,6 +317,18 @@ footer>div:last-of-type {
     color: var(--grayish-blue);
 }
 
+.attribution{
+    font-size: .8rem;
+    margin-top:-1rem;
+
+    max-width: 100%;
+    /* text-align: center; */
+}
+
+
+.attribution br{
+    display: none;
+}
 
 footer nav {
 
@@ -331,3 +348,4 @@ footer .social_handles {
     margin-top: 50px;
     column-gap: 15px;
 }
+
