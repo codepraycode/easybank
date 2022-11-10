@@ -27,6 +27,10 @@
     --font-w-700: 700;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 
 body{
     margin: 0;
@@ -39,6 +43,9 @@ body{
     font-family: var(--font-family);
     font-size:var(--font-size);
     font-weight: var(--font-w-300);
+
+
+    overflow-x: hidden;
 
 
 }
@@ -64,28 +71,101 @@ button{
     font-weight: var(--font-w-400);
 }
 
+p{
+    color: var(--grayish-blue);
+    margin: 2rem 0;
+}
+h2{
+    margin: 0;
+}
+
 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-header{
-    display: flex;
-    align-items:center;
-    justify-content:space-between;
-
-    padding: 1rem 6rem;
-
-    background-color:var(--white);
-}
-
-
-nav ul{
+nav ul {
     display: flex;
     column-gap: 20px;
     align-items: center;
     font-size: 0.9rem;
-    color: var(--grayish-blue)
+    color: var(--grayish-blue);
+}
+
+header,
+section {
+    padding: 1rem 8rem;
+}
+
+header{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    background-color:var(--white);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 2;
+}
+
+
+.hero{
+    background-color: var(--light-grayish-blue);
+    height: 95vh;
+
+    /* position: relative; */
+
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+
+    /* overflow: hidden; */
+}
+
+.hero h2{
+    margin-top: 8rem;
+    font-size: 3.5rem;
+    color: var(--dark-blue);
+    font-weight: var(--font-w-400);
+    font-family: var(--font-family);
+}
+.hero div:first-of-type{
+    width: 40%;
+}
+.hero div:last-of-type{
+    position: absolute;
+    right: -24%;
+    top: -6%;
+
+    z-index: 1;
+
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+
+    background-image: url('/images/bg-intro-desktop.svg');
+    background-repeat:no-repeat;
+    background-position: center center;
+
+    background-size: cover;
+
+    height: 100%;
+    width: 80%;
+}
+.hero div:last-of-type img{
+    height: auto;
+    width: 60%;
+
+    margin-top: 9rem;
+
+    user-select: none;
+
 
 }
+
