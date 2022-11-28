@@ -6,11 +6,7 @@
 ## Table of contents
 
 - [Overview](#overview)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
+- [Usage](#usage)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
