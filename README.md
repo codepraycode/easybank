@@ -8,7 +8,6 @@
 - [Overview](#overview)
 - [Usage](#usage)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
